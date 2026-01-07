@@ -1,0 +1,530 @@
+/* ------------------------------------------
+   SECTION TITLES
+------------------------------------------ */
+.page-content h1 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--green);
+}
+
+.page-content h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  transform: translateX(-50%);
+  transition: width 0.4s ease;
+  color: var(--green);
+}
+
+.page-content h1.in-view::after {
+  width: 120%;
+  color: var(--green);
+}
+
+.page-content h1:not(:first-of-type) {
+  margin-top: 60px;
+  color: var(--green);
+}
+
+/* ------------------------------------------
+   Container
+------------------------------------------ */
+
+.container {
+  max-width: 1200px;
+}
+
+/* ------------------------------------------
+   PROJECT ROW (outer wrapper)
+------------------------------------------ */
+.project-row {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-row:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 12px 28px var(--black-alpha-18);
+}
+
+/* Alternating layout */
+.project-row.reverse .project-inner {
+  flex-direction: row-reverse;
+}
+
+/* ------------------------------------------
+   PROJECT INNER (card)
+------------------------------------------ */
+.project-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--green-alpha-35);
+  border-radius: 6px;
+  background: var(--black-alpha-40);
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.project-inner.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover glow */
+.project-inner:hover {
+  position: relative;
+  transform: translateY(-4px);
+  border-color: var(--green);
+  box-shadow:
+    0 0 8px var(--green-alpha-45),
+    0 0 16px var(--green-alpha-25),
+    0 0 24px var(--green-alpha-12);
+}
+
+.project-inner:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--green-alpha-05) 0px,
+    var(--green-alpha-05) 1px,
+    transparent 2px
+  );
+}
+
+/* ------------------------------------------
+   IMAGE + LINK
+------------------------------------------ */
+.project-row .project-image-link {
+  display: block;
+  flex: 0 0 50%;
+  width: 50%;
+  text-decoration: none;
+}
+
+.project-row img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ------------------------------------------
+   TEXT CONTENT
+------------------------------------------ */
+.project-text {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.project-text p {
+  text-align: justify;
+}
+
+.project-game-description {
+  margin-top: 6px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: var(--text-muted);
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.project-description {
+  margin-bottom: 12px;
+}
+
+
+/* ------------------------------------------
+   RESPONSIVE RULES
+------------------------------------------ */
+
+@media (max-width: 1000px) {
+  .project-title-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .project-title-row h2 {
+    margin-bottom: 0;
+    color: var(--green);
+  }
+}
+
+@media (max-width: 800px) {
+  .project-title-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .project-title-row h2,
+  .project-title-row .project-release {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: var(--green);
+  }
+
+  .project-title-row h2 {
+    margin-bottom: 0;
+    color: var(--green);
+  }
+
+  .project-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-inner,
+  .project-row.reverse .project-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-row .project-image-link {
+    width: 100%;
+  }
+
+  .project-row img {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+/* ------------------------------------------
+   PLATFORM BADGES
+------------------------------------------ */
+.platform-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin-top: 10px;
+}
+
+.platform-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.platform-badge:hover {
+  border-color: var(--green);
+  box-shadow:
+    0 0 4px var(--green-alpha-45),
+    0 0 8px var(--green-alpha-30),
+    0 0 12px var(--green-alpha-12);
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.platform-badge img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  filter: brightness(1.2);
+}
+
+/* ------------------------------------------
+   META INFO
+------------------------------------------ */
+
+.project-tags {
+  margin: 0px 0 6px 0;
+}
+
+.project-badges {
+  font-size: 0.85rem;
+  color: var(--black-alpha-70);
+  margin: 4px 0 12px 0;
+}
+
+.project-tag {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid var(--green);
+  color: var(--green);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.project-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.project-title-row h3 {
+  margin: 0;
+  color: var(--green);
+}
+
+.project-release {
+  color: var(--green);
+  opacity: 0.9;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------- */
+/* Smaller Projects Section                      */
+/* --------------------------------------------- */
+
+.smaller-projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+  align-items: stretch;    
+  box-sizing: border-box;
+}
+
+.smaller-project-card {
+  box-sizing: border-box;
+  /* Default: 3 per row */
+  flex: 0 0 calc((100% - 48px) / 3); /* 48px = 2 * gap (24px) */
+  max-width: calc((100% - 48px) / 3);
+  min-width: 220px;
+}
+
+/* Medium screens → 2 per row */
+@media (max-width: 900px) {
+  .smaller-project-card {
+    flex: 0 0 calc((100% - 24px) / 2); /* 24px = 1 * gap */
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+
+/* Small screens → 1 per row */
+@media (max-width: 600px) {
+  .smaller-project-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.smaller-project-card {
+  box-sizing: border-box;
+  background: var(--black-alpha-40);
+  border: 1px solid var(--green-alpha-35);
+  border-radius: 6px;
+  padding: 15px;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  position: relative;
+}
+
+/* Visible state (added by IntersectionObserver) */
+.smaller-project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.smaller-project-card:hover {
+  position: relative;
+  transform: translateY(-4px);
+  border-color: var(--green);
+  box-shadow:
+    0 0 8px var(--green-alpha-45),
+    0 0 16px var(--green-alpha-25),
+    0 0 24px var(--green-alpha-12);
+}
+
+.smaller-project-card:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--green-alpha-05) 0px,
+    var(--green-alpha-05) 1px,
+    transparent 2px
+  );
+}
+
+.smaller-project-image-link {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smaller-project-image-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.smaller-project-card h2 {
+  margin: 6px 0 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--green);
+}
+
+.smaller-project-card .project-release {
+  display: block;
+  text-align: center;
+  margin: 4px 0 8px;
+  white-space: nowrap;
+}
+
+.smaller-project-card .project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smaller-project-card .project-game-description {
+  margin-bottom: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.smaller-project-card .project-description {
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  .talks-list {
+    padding: 0 16px;
+  }
+
+  .talk-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .talk-release {
+    font-size: 0.85rem;
+  }
+}
+
+/* --------------------------------------------- */
+/* Closing Section                               */
+/* --------------------------------------------- */
+
+.closing-section {
+  max-width: 650px;
+  margin: 48px auto 32px;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.closing-section p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.closing-links {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.closing-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.closing-links a:hover {
+  border-color: var(--green);
+  box-shadow:
+    0 0 4px var(--green-alpha-45),
+    0 0 8px var(--green-alpha-30),
+    0 0 12px var(--green-alpha-12);
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .closing-section {
+    padding: 0 16px;
+  }
+}
+

@@ -1,0 +1,5 @@
+navigation:
+  - label: Portfolio
+    url: /
+  - label: About
+    url: /about

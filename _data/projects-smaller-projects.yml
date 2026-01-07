@@ -1,0 +1,140 @@
+- title: "Bangbi Mambi: The Human Hunter"
+  project_description: >
+    Are you a deer? Are you sick humans hunting you? Hunt them back!
+  description: >
+    Developed during the GMTK game jam, as a part of a team of 5, trying Unreal Engine for the first time. 
+    I implemented movement, shooting mechanics, pick-ups, and weapon switching using blueprints, as well as
+    providing and integrating sound effects and music.
+  image: assets/images/bmthh.png
+  url: https://teo3fl.itch.io/bangbi
+  release: Aug 2023
+  tags: [Unreal Engine 5, 3D, Shooter, Comedy]
+  platforms:
+    - id: itchio
+      url: https://teo3fl.itch.io/bangbi
+
+- title: Witch House
+  project_description: >
+    A story-driven RPG with horror themes and a cat familiar.
+  description: >
+    I contributed with a system that manages the state of the player's cat companion. This implies 
+    spawning the companion in set locations or in the spawn point that is nearest to the player, 
+    switching animations "at random", and head tracking that can be toggled on and off.
+  image: assets/images/wh.png
+  url: https://www.youtube.com/watch?v=x-wPJP8wTr8
+  release: Oct 2022
+  tags: [3D, Puzzle, Horror]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=x-wPJP8wTr8
+
+- title: "Statera: Balance Restored"
+  project_description: >
+    Follow the story of two childhood friends who have grown apart. 
+  description: >
+    Developed during the Duo game jam, as a part of a team of 5. I implemented 
+    an event system that facilitates the creation of cutscenes, with parallel and serial 
+    execution sequences for said events, and triggers for both events and sequences.
+  image: assets/images/sbr.png
+  url: https://www.youtube.com/watch?v=OIEyxp-jpVI
+  release: Mar 2022
+  tags: [2D, Platformer, Puzzle]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=OIEyxp-jpVI
+
+- title: Rocket Launcher Simulator
+  project_description: >
+    Simulates the process of shooting down jet aircrafts with homing missles.
+  description: >
+    Developed based on specifications, as the sole developer. I implemented spawners, night/day 
+    switching, shooting, sound effects, homing missiles, target locking, aircrafts falling and 
+    despawning upon being hit, and UI.
+  image: assets/images/rls.jpg
+  url: https://www.youtube.com/watch?v=CyOk5WIYJo0
+  release: Feb 2022
+  tags: [3D, Simulator, Shooter]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=CyOk5WIYJo0
+
+- title: Snake
+  project_description: >
+    The classical game, implemented from scratch using C++ and the SFML library. 
+  description: >
+    Implemented basic engine functionality such as object movement, object spawning, pick-ups, collision 
+    detection, state change, input detection, and functionality for adding custom maps. Used SFML which provided
+    low-level functionality for rendering text, primitive shapes, and sprites.
+  image: assets/images/snake.png
+  url: https://github.com/teo3fl/Snake
+  release: Dec 2021
+  tags: [2D, Arcade, Puzzle]
+  platforms:
+    - id: github
+      url: https://github.com/teo3fl/Snake
+
+- title: Water Sort Puzzle Solver
+  project_description: >
+    Provides a solution for the water sort game. 
+  description: >
+    Implemented A* tree search, UI functionality for setting the initial state, custom colors through the 
+    use of a color picker, drag functionality for dragging a color from one block to another, and a 
+    step-by-step visualizer that displays the solution. 
+  image: assets/images/wsps.png
+  url: https://github.com/teo3fl/WaterSortPuzzleSolver
+  release: Nov 2021
+  tags: [2D, Arcade, Puzzle]
+  platforms:
+    - id: github
+      url: https://github.com/teo3fl/WaterSortPuzzleSolver
+    - id: itchio
+      url: https://teo3fl.itch.io/sort-puzzle-solver
+
+- title: Rehearseal
+  project_description: >
+    Play as the devil's personal taxi driver!
+  description: >
+    Developed during the Spooktober game jam, as a part of a team of 4.
+    I implemented the intro cutscene, the gameplay minimap, spawners, leaderboard, 
+    and provided and integrated sound effects and music.
+  image: assets/images/r_wallpaper.png
+  url: https://www.youtube.com/watch?v=Qp4u8P5pV9c
+  release: Oct 2021
+  tags: [3D, Top Down, Driving]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=Qp4u8P5pV9c
+
+- title: Last Slime Standing
+  project_description: >
+    Defend your crops from monsters. Days are tough, but nights are tougher.
+  description: >
+    Developed during the Brackeys game jam, as a part of a team of 4. I implemented 
+    UI elements, the enemy spawner, the game cycle mechanic, and provided and integrated
+    sound effects and music.
+  image: assets/images/lss.png
+  url: https://www.youtube.com/watch?v=sarn_AGfYmk
+  release: Jun 2021
+  tags: [3D, Top Down, Shooter]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=sarn_AGfYmk
+
+- title: Reverse
+  project_description: >
+    Playing Othello against a skilled cat opponent.
+  description: >
+    Developed during my final year of university, as the sole developer. I implemented two AI 
+    opponents with adjustable difficulty levels that use different strategies, customizable 
+    board components and gameplay environments, achievements, a 3D store, multiplayer, and UI 
+    elements. I also edited and integrated sound effects, animated the opponent, and created some 
+    3D models.
+  image: assets/images/reverse.png
+  url: https://www.youtube.com/watch?v=44uQe-3Cukc
+  release: Jun 2021
+  tags: [3D, Board Game]
+  platforms:
+    - id: youtube
+      url: https://www.youtube.com/watch?v=44uQe-3Cukc
+
+

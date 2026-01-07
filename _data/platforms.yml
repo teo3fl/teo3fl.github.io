@@ -1,0 +1,30 @@
+steam:
+  name: Steam
+playstation:
+  name: PlayStation
+xbox:
+  name: Xbox
+switch:
+  name: Switch
+ios:
+  name: iOS
+android:
+  name: Android
+itchio:
+  name: Itch.io
+instagram:
+  name: Instagram
+youtube:
+  name: YouTube
+linkedin:
+  name: LinkedIn
+ggj:
+  name: GGJ
+gamejolt:
+  name: GameJolt
+github:
+  name: GitHub
+x:
+  name: X
+unityassetstore:
+  name: Asset Store

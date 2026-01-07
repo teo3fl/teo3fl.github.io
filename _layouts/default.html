@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    {% include head-custom.html %}
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container intro-section">
+        <a id="a-title" href="{{ '/' | relative_url }}">
+            <h1 class="intro-title">{{ site.author.name }}</h1>
+        </a>
+        <h2 class="intro-subtitle">
+          {{ site.author.title }}
+        </h2>
+        <p class="intro-bio">
+          {{ site.author.description }}
+        </p>
+        <div class="intro-links">
+          {% for social in site.socials %}
+            <a href="{{ social.url }}" {% unless social.inTab %} target="_blank" {% endunless %} class="intro-icon {{ social.name }}">
+              <img src="/assets/icons/socials/s_{{ social.name }}.svg">
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if site.show_navigation %}
+        <div class="container">
+          {% include navigation.html %}
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="container page-content">
+      <section id="main_content">
+        {{ content }}
+      </section>
+    </div>
+
+    <div class="scroll-top-wrapper floating">
+      <button id="scrollTopBtn" class="btn scroll-top-btn">ߍ Back to Top</button>
+    </div>
+
+    {% include footer-content.html %}
+    {% include script-custom.html %}
+  </body>
+</html>

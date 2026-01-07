@@ -1,0 +1,135 @@
+/* ------------------------------------------
+   HEADER NAVIGATION
+------------------------------------------ */
+.site-nav {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  gap: 24px;
+}
+
+.site-nav ul li {
+  list-style: none;
+  list-style-image: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 0.4px;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover {
+  opacity: 1;
+  color: var(--green);
+}
+
+.site-nav a.active {
+  color: var(--green);
+  opacity: 1;
+  position: relative;
+}
+
+.site-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 22px;
+  height: 2px;
+  background: var(--green);
+  border-radius: 2px;
+}
+
+/* ------------------------------------------
+   RESPONSIVE HEADER NAVIGATION
+------------------------------------------ */
+@media (max-width: 600px) {
+  .site-nav {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .site-nav li {
+    width: 100%;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+
+  .site-nav a.active::after {
+    bottom: -2px;
+  }
+}
+
+
+/* ------------------------------------------
+   SCROLL TO TOP BUTTON
+------------------------------------------ */
+
+.scroll-top-btn {
+  cursor: pointer;
+  font-size: 13px;
+  padding: 8px 18px;
+  border: 1px solid var(--green);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text-light);
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+
+.scroll-top-wrapper {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.scroll-top-wrapper.floating {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 999;
+  margin: 0;
+}
+
+#scrollTopBtn {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scrollTopBtn.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  border-color: var(--green);
+  box-shadow: 0 0 6px var(--green), 0 0 12px var(--green);
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-2px);
+}

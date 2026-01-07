@@ -1,0 +1,43 @@
+# Site Data
+title: Teodora Profirescu - Unity Developer
+description: A showcase of my projects and my game development journey.
+image: /assets/images/profile.png
+url: https://teo3fl.github.io
+baseurl: ""
+
+# Configuration
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+google_analytics: G-M7HRV5WG9L
+show_downloads: false
+show_navigation: true
+permalink: /blog/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category: blog
+feed:
+  posts_limit: 10
+  path: /blog/feed.xml
+  icon: /images/favicon/website-icon-32x32.png
+  logo: /images/favicon/website-icon-32x32.png
+
+
+# Profile
+author: 
+  name: Teodora Profirescu
+  title: Unity Programmer
+  description: Specialized in gameplay and systems. Strong familiarity with UI, NPC behavior, async development, and asset integration. Multidisciplinary background enabling close collaboration with Art and Design teams.
+socials:
+  - name: cv
+    url: https://docs.google.com/document/d/1RoAZ63iiCEtxjN4NPggb-jIcWw-zZBwj/edit?usp=sharing&ouid=105366722761830181673&rtpof=true&sd=true
+    inTab: true
+  - name: linkedin
+    url: https://www.linkedin.com/in/teodora-profirescu/
+  - name: github
+    url: https://github.com/teo3fl
