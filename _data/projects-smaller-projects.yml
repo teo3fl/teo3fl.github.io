@@ -5,7 +5,7 @@
     Developed during the GMTK game jam, as a part of a team of 5, trying Unreal Engine for the first time. 
     I implemented movement, shooting mechanics, pick-ups, and weapon switching using blueprints, as well as
     providing and integrating sound effects and music.
-  image: assets/images/bmthh.png
+  image: assets/images/bangbi.gif
   url: https://teo3fl.itch.io/bangbi
   release: Aug 2023
   tags: [Unreal Engine 5, 3D, Shooter, Comedy]
