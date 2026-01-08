@@ -27,7 +27,7 @@
     the TTS system handles large amount of audio files that are downloaded during a session, by 
     dynamically determining which ones have the highest priority based on the player’s progression 
     in the current level.
-  image: assets/images/vr.png
+  image: assets/images/educational-project.gif
   url: https://github.com/teo3fl/Unity-TTS-system
   release: Groupe Luminess - 2024
   tags: [VR, Simulator, Educational]
