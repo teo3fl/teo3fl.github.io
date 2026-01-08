@@ -65,7 +65,7 @@
     Implemented basic engine functionality such as object movement, object spawning, pick-ups, collision 
     detection, state change, input detection, and functionality for adding custom maps. Used SFML which provided
     low-level functionality for rendering text, primitive shapes, and sprites.
-  image: assets/images/snake.png
+  image: assets/images/snake.gif
   url: https://github.com/teo3fl/Snake
   release: Dec 2021
   tags: [2D, Arcade, Puzzle]
