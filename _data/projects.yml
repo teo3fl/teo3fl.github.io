@@ -42,7 +42,7 @@
    level controllers. Created behavior trees for the NPCs using the Behavior Designer. 
    Implemented new abilities for the characters, a part of the HUD and in-game pause menu,
    and networking elements.
-  image: assets/images/tr.png
+  image: assets/images/time-raiders.gif
   url: https://store.steampowered.com/app/1736620/The_Eightfold_Path
   release: Utopian Game Labs - 2022
   tags: [3D, Shooter]
@@ -57,7 +57,7 @@
     disappearance.
   description: >
     Implemented NPC behaviors, puzzles, envirnoment objects, shooting mechanics, travel components, and integrated animations.
-  image: assets/images/sf.png
+  image: assets/images/sunfall.gif
   url: https://www.youtube.com/watch?v=XL3OUORIGX0
   release: Tractor Set GO! - 2022
   tags: [3D, Shooter, Horror]

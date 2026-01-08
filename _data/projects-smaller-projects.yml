@@ -20,7 +20,7 @@
     I contributed with a system that manages the state of the player's cat companion. This implies 
     spawning the companion in set locations or in the spawn point that is nearest to the player, 
     switching animations "at random", and head tracking that can be toggled on and off.
-  image: assets/images/wh.png
+  image: assets/images/witch-house.gif
   url: https://www.youtube.com/watch?v=x-wPJP8wTr8
   release: Oct 2022
   tags: [3D, Puzzle, Horror]
@@ -35,7 +35,7 @@
     Developed during the Duo game jam, as a part of a team of 5. I implemented 
     an event system that facilitates the creation of cutscenes, with parallel and serial 
     execution sequences for said events, and triggers for both events and sequences.
-  image: assets/images/sbr.png
+  image: assets/images/statera.gif
   url: https://www.youtube.com/watch?v=OIEyxp-jpVI
   release: Mar 2022
   tags: [2D, Platformer, Puzzle]
@@ -50,7 +50,7 @@
     Developed based on specifications, as the sole developer. I implemented spawners, night/day 
     switching, shooting, sound effects, homing missiles, target locking, aircrafts falling and 
     despawning upon being hit, and UI.
-  image: assets/images/rls.jpg
+  image: assets/images/rocket-launcher-simulator.gif
   url: https://www.youtube.com/watch?v=CyOk5WIYJo0
   release: Feb 2022
   tags: [3D, Simulator, Shooter]
@@ -80,7 +80,7 @@
     Implemented A* tree search, UI functionality for setting the initial state, custom colors through the 
     use of a color picker, drag functionality for dragging a color from one block to another, and a 
     step-by-step visualizer that displays the solution. 
-  image: assets/images/wsps.png
+  image: assets/images/sort-puzzle-solver.gif
   url: https://github.com/teo3fl/WaterSortPuzzleSolver
   release: Nov 2021
   tags: [2D, Arcade, Puzzle]
@@ -97,7 +97,7 @@
     Developed during the Spooktober game jam, as a part of a team of 4.
     I implemented the intro cutscene, the gameplay minimap, spawners, leaderboard, 
     and provided and integrated sound effects and music.
-  image: assets/images/r_wallpaper.png
+  image: assets/images/rehearseal.gif
   url: https://www.youtube.com/watch?v=Qp4u8P5pV9c
   release: Oct 2021
   tags: [3D, Top Down, Driving]
@@ -112,7 +112,7 @@
     Developed during the Brackeys game jam, as a part of a team of 4. I implemented 
     UI elements, the enemy spawner, the game cycle mechanic, and provided and integrated
     sound effects and music.
-  image: assets/images/lss.png
+  image: assets/images/last-slime-standing.gif
   url: https://www.youtube.com/watch?v=sarn_AGfYmk
   release: Jun 2021
   tags: [3D, Top Down, Shooter]
@@ -129,12 +129,10 @@
     board components and gameplay environments, achievements, a 3D store, multiplayer, and UI 
     elements. I also edited and integrated sound effects, animated the opponent, and created some 
     3D models.
-  image: assets/images/reverse.png
+  image: assets/images/reverse.gif
   url: https://www.youtube.com/watch?v=44uQe-3Cukc
   release: Jun 2021
   tags: [3D, Board Game]
   platforms:
     - id: youtube
       url: https://www.youtube.com/watch?v=44uQe-3Cukc
-
-
