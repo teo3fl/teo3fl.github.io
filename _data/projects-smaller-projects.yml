@@ -122,7 +122,7 @@
 
 - title: Reverse
   project_description: >
-    Playing Othello against a skilled cat opponent.
+    Play Othello against a skilled cat opponent.
   description: >
     Developed during my final year of university, as the sole developer. Implemented two AI 
     opponents with adjustable difficulty levels that use different strategies, customizable 
