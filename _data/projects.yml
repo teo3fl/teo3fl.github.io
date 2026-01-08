@@ -7,7 +7,7 @@
     I have implemented core systems and mechanics, support for multiple languages, integrated ads and 
     in-app purchases, integrated and edited assets provided by the client, and tested and delivered builds 
     periodically.
-  image: assets/images/ba.png
+  image: assets/images/brain-attack.gif
   url: https://store.steampowered.com/app/1111590/Linked_Mask/
   release: "2025"
   tags: [2D, Mobile, Trivia, Shooter]
