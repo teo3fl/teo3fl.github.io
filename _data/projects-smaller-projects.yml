@@ -68,7 +68,7 @@
   image: assets/images/snake.gif
   url: https://github.com/teo3fl/Snake
   release: Dec 2021
-  tags: [2D, Arcade, Puzzle]
+  tags: [2D, Arcade]
   platforms:
     - id: github
       url: https://github.com/teo3fl/Snake
