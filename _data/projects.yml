@@ -10,15 +10,15 @@
   image: assets/images/brain-attack.gif
   url: https://store.steampowered.com/app/1111590/Linked_Mask/
   release: "2025"
-  tags: [2D, Mobile, Trivia, Shooter]
+  tags: [2D, Mobile, Trivia, Vertical Scrolling]
   platforms:
     - id: youtube
       url: https://www.youtube.com/watch?v=YpNQ10RBiJk
 
 - title: Educational Project
   project_description: >
-    A collection of immersive applications that teach the user how to handle various situations 
-    in their specific work fields.
+    A collection of immersive simulations depicting real-life scenarios, that are used in formal settings 
+    for educational purposes.
   description: >
     I have taken the initiative to refactor and expand the codebase 
     that was shared across multiple projects, and so I became the systems engineer of the 
@@ -38,14 +38,13 @@
     time as your playground. Battle through our past, alternate histories and the 
     future.
   description: >
-   Implemented gameplay systems such as achievements, objectives, spawners, statistics, 
+   I implemented gameplay systems such as achievements, objectives, spawners, statistics, 
    level controllers. Created behavior trees for the NPCs using the Behavior Designer. 
-   Implemented new abilities for the characters, a part of the HUD and in-game pause menu,
-   and networking elements.
+   Implemented new abilities for the characters, a part of the UI, and networking elements.
   image: assets/images/time-raiders.gif
   url: https://store.steampowered.com/app/1736620/The_Eightfold_Path
   release: Utopian Game Labs - 2022
-  tags: [3D, Shooter]
+  tags: [3D, Top Down, Shooter]
   platforms:
     - id: steam
       url: https://store.steampowered.com/app/2410900/Time_Raiders/
@@ -56,11 +55,11 @@
     capabilities to conquer  hostile alien fauna and unveil the mystery behind parental 
     disappearance.
   description: >
-    Implemented NPC behaviors, puzzles, envirnoment objects, shooting mechanics, travel components, and integrated animations.
+    I implemented NPC behaviors, puzzles, envirnoment objects, shooting mechanics, travel components, and integrated assets.
   image: assets/images/sunfall.gif
   url: https://www.youtube.com/watch?v=XL3OUORIGX0
   release: Tractor Set GO! - 2022
-  tags: [3D, Shooter, Horror]
+  tags: [3D, Top Down, Shooter, Horror]
   platforms:
     - id: steam
       url: https://store.steampowered.com/app/2179530/Sunfall_Children_of_Adiona/

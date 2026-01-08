@@ -2,8 +2,8 @@
   project_description: >
     Are you a deer? Are you sick humans hunting you? Hunt them back!
   description: >
-    Developed during the GMTK game jam, as a part of a team of 5, trying Unreal Engine for the first time. 
-    I implemented movement, shooting mechanics, pick-ups, and weapon switching using blueprints, as well as
+    Developed during the GMTK game jam, as part of a team of 5. 
+    I implemented movement, shooting mechanics, pick-ups, NPC movement, and weapon switching using blueprints, as well as
     providing and integrating sound effects and music.
   image: assets/images/bangbi.gif
   url: https://teo3fl.itch.io/bangbi
@@ -32,9 +32,9 @@
   project_description: >
     Follow the story of two childhood friends who have grown apart. 
   description: >
-    Developed during the Duo game jam, as a part of a team of 5. I implemented 
+    Developed during the Duo game jam, as part of a team of 5. I implemented 
     an event system that facilitates the creation of cutscenes, with parallel and serial 
-    execution sequences for said events, and triggers for both events and sequences.
+    execution sequences for said events, and triggers.
   image: assets/images/statera.gif
   url: https://www.youtube.com/watch?v=OIEyxp-jpVI
   release: Mar 2022
@@ -63,7 +63,7 @@
     The classical game, implemented from scratch using C++ and the SFML library. 
   description: >
     Implemented basic engine functionality such as object movement, object spawning, pick-ups, collision 
-    detection, state change, input detection, and functionality for adding custom maps. Used SFML which provided
+    detection, scene transitions, input detection, and functionality for adding custom maps. Used SFML which provided
     low-level functionality for rendering text, primitive shapes, and sprites.
   image: assets/images/snake.gif
   url: https://github.com/teo3fl/Snake
@@ -94,9 +94,9 @@
   project_description: >
     Play as the devil's personal taxi driver!
   description: >
-    Developed during the Spooktober game jam, as a part of a team of 4.
-    I implemented the intro cutscene, the gameplay minimap, spawners, leaderboard, 
-    and provided and integrated sound effects and music.
+    Developed during the Spooktober game jam, as part of a team of 4.
+    Implemented the intro cutscene, the gameplay minimap, spawners, leaderboard, and provided and integrated 
+    sound effects and music.
   image: assets/images/rehearseal.gif
   url: https://www.youtube.com/watch?v=Qp4u8P5pV9c
   release: Oct 2021
@@ -109,8 +109,8 @@
   project_description: >
     Defend your crops from monsters. Days are tough, but nights are tougher.
   description: >
-    Developed during the Brackeys game jam, as a part of a team of 4. I implemented 
-    UI elements, the enemy spawner, the game cycle mechanic, and provided and integrated
+    Developed during the Brackeys game jam, as part of a team of 4. I implemented 
+    UI elements, the enemy spawner, the morning-day-night cycle mechanic, and provided and integrated
     sound effects and music.
   image: assets/images/last-slime-standing.gif
   url: https://www.youtube.com/watch?v=sarn_AGfYmk
@@ -124,7 +124,7 @@
   project_description: >
     Playing Othello against a skilled cat opponent.
   description: >
-    Developed during my final year of university, as the sole developer. I implemented two AI 
+    Developed during my final year of university, as the sole developer. Implemented two AI 
     opponents with adjustable difficulty levels that use different strategies, customizable 
     board components and gameplay environments, achievements, a 3D store, multiplayer, and UI 
     elements. I also edited and integrated sound effects, animated the opponent, and created some 
