@@ -1,19 +1,20 @@
-- title: Brain Attack (demo)
+- title: Brain Attack
   project_description: >
     A game that combines trivia questions with real-time dodging and item collection 
     mechanics in a multitasking gameplay loop.
   description: >
-    I was responsible for every aspect of the development process, as the sole developer on the project. 
+    I was responsible for prototyping the game and managing every aspect of the development process, as the sole 
+    developer on the demo project. 
     I have implemented core systems and mechanics, support for multiple languages, integrated ads and 
     in-app purchases, integrated and edited assets provided by the client, and tested and delivered builds 
     periodically.
   image: assets/images/brain-attack.gif
-  url: https://store.steampowered.com/app/1111590/Linked_Mask/
+  url: https://play.google.com/store/apps/details?id=com.MindForge.com.unity.BrainAttack&hl=en
   release: "2025"
   tags: [2D, Mobile, Trivia, Vertical Scrolling]
   platforms:
-    - id: youtube
-      url: https://www.youtube.com/watch?v=YpNQ10RBiJk
+    - id: android
+      url: https://play.google.com/store/apps/details?id=com.MindForge.com.unity.BrainAttack&hl=en
 
 - title: Educational Project
   project_description: >
@@ -45,7 +46,7 @@
    level controllers. Created behavior trees for the NPCs using the Behavior Designer. 
    Implemented new abilities for the characters, a part of the UI, and networking elements.
   image: assets/images/time-raiders.gif
-  url: https://store.steampowered.com/app/1736620/The_Eightfold_Path
+  url: https://www.youtube.com/watch?v=d7g3Xwa_tpE
   release: Utopian Game Labs - 2022
   tags: [3D, Top Down, Shooter]
   platforms:
