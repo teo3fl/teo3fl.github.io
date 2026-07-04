@@ -83,7 +83,7 @@
   image: assets/images/sort-puzzle-solver.gif
   url: https://github.com/teo3fl/WaterSortPuzzleSolver
   release: Nov 2021
-  tags: [2D, Arcade, Puzzle]
+  tags: [2D, Puzzle]
   platforms:
     - id: github
       url: https://github.com/teo3fl/WaterSortPuzzleSolver
